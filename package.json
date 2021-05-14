@@ -1,0 +1,19 @@
+{
+  "name": "mbros_products",
+  "version": "1.0.0",
+  "description": "Moradiya Brothers",
+  "main": "server.js",
+  "dependencies": {
+    "cores": "^0.8.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "Rohit Moradiya",
+  "license": "ISC"
+}

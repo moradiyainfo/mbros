@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moradiya Brothers - Products</title>
+    <!-- Fonts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link href="./assets/font.css?family=Roboto:300,400,500" rel="stylesheet" />
+    <script src="./assets/jquery.min.js" charset="utf-8"></script>
+
+    <script src="./assets/script.js" charset="utf-8"></script>
+
+    <link href="./assets/style.css" rel="stylesheet" />
+    <meta name="robots" content="noindex,follow" />
+  </head>
+
+  <body>
+    <main class="container" ng-app="mbros_products" ng-controller="mbros_ctrl">
+      <!-- Left Column / Headphones Image -->
+      <div class="left-column">
+        <img ng-src="images/{{imgsrc}}" alt="" />
+      </div>
+
+      <!-- Right Column -->
+      <div class="right-column">
+        <!-- Product Description -->
+        <div class="product-description">
+          <span>{{product_name}}</span>
+          <h1>{{product_name2}}</h1>
+          <p>{{product_desc}}</p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+          <!--
+       
+          <div class="product-color">
+            <span>Color</span>
+
+            <div class="color-choose">
+               <div>
+                <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                <label for="red"><span></span></label>
+              </div> 
+               <div>
+                <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                <label for="blue"><span></span></label>
+              </div>
+               <div>
+                <input data-image="black" type="radio" id="black" name="color" value="black"checked>
+                <label for="black"><span></span></label>
+              </div>
+            </div> 
+
+          </div>-->
+
+          <!-- Cable Configuration -->
+          <div class="cable-config">
+            <span>Brand</span>
+
+            <div class="cable-choose">
+              <button>Zebronics</button>
+              <button>Intel</button>
+            </div>
+
+            <!-- <a href="#">How to configurate your headphones</a> -->
+          </div>
+        </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+          <span>{{product_rate}} Rs</span>
+          <!-- <a href="#" class="cart-btn">Add to cart</a> -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+  </body>
+</html>
