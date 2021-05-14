@@ -9,7 +9,7 @@ const cors = require('cors');
 
 var pool = mysql.createPool({
     connectionLimit: 100,
-    host: "localhost",
+    host: "http://103.224.247.81/",
     user: "mbros",
     password: "Mbros@123",
     database: "mbros",
@@ -19,7 +19,7 @@ var pool = mysql.createPool({
 
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://mbros.herokuapp.com/',
     credentials: true
 }));
 app.use(express.json());
